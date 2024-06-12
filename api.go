@@ -19,7 +19,7 @@ type Client interface {
 	// WriteMultipleCoils forces each coil in a sequence of coils to either
 	// ON or OFF in a remote device and returns quantity of outputs.
 	WriteMultipleCoils(address, quantity uint16, value []byte) (results []byte, err error)
-
+	WriteSingleCoilsByFunCode(address uint16, funcCode byte, value uint16) (results []byte, err error)
 	// 16-bit access
 
 	// ReadInputRegisters reads from 1 to 125 contiguous input registers in
