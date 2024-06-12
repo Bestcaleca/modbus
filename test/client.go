@@ -5,9 +5,8 @@
 package test
 
 import (
+	"github.com/Bestcaleca/modbus"
 	"testing"
-
-	"github.com/goburrow/modbus"
 )
 
 func ClientTestReadCoils(t *testing.T, client modbus.Client) {
